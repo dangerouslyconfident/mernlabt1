@@ -1,0 +1,119 @@
+:root {
+  /* Colors stored as space-separated RGB channels for opacity modifier support */
+  --bg: 9 10 15;
+  --bg-elevated: 17 19 28;
+  --glass: 255 255 255;
+  --glass-border: 255 255 255;
+  --glass-highlight: 255 255 255;
+
+  --text-primary: 243 244 246;
+  --text-secondary: 209 213 219;
+  --text-muted: 156 163 175;
+
+  --accent: 99 102 241;
+  --accent-from: 99 102 241;
+  --accent-to: 168 85 247;
+
+  --success: 16 185 129;
+  --danger: 244 63 94;
+
+  /* Standard color variables */
+  --color-bg-val: rgb(var(--bg));
+  --color-bg-elevated-val: rgb(var(--bg-elevated));
+  --color-glass-val: rgb(var(--glass));
+  --color-glass-border-val: rgb(var(--glass-border));
+  --color-glass-highlight-val: rgb(var(--glass-highlight));
+
+  --color-primary-val: rgb(var(--text-primary));
+  --color-secondary-val: rgb(var(--text-secondary));
+  --color-muted-val: rgb(var(--text-muted));
+
+  --color-accent-val: rgb(var(--accent));
+  --color-accent-from-val: rgb(var(--accent-from));
+  --color-accent-to-val: rgb(var(--accent-to));
+
+  --color-success-val: rgb(var(--success));
+  --color-danger-val: rgb(var(--danger));
+
+  /* Radii tokens */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Blur tokens */
+  --blur-sm: 4px;
+  --blur-md: 12px;
+  --blur-lg: 20px;
+  --blur-xl: 32px;
+  --blur-2xl: 48px;
+
+  /* Shadow tokens */
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --shadow-glass-elevated: 0 16px 48px 0 rgba(0, 0, 0, 0.45);
+  --shadow-glass-glow: 0 0 60px -10px rgba(99, 102, 241, 0.25);
+}
+
+[data-theme="light"] {
+  --bg: 248 249 252;
+  --bg-elevated: 255 255 255;
+  --glass: 0 0 0;
+  --glass-border: 0 0 0;
+  --glass-highlight: 255 255 255;
+
+  --text-primary: 17 24 39;
+  --text-secondary: 55 65 81;
+  --text-muted: 107 114 128;
+
+  --accent: 79 70 229;
+  --accent-from: 79 70 229;
+  --accent-to: 147 51 234;
+
+  --success: 5 150 105;
+  --danger: 225 29 72;
+
+  --color-bg-val: rgb(var(--bg));
+  --color-bg-elevated-val: rgb(var(--bg-elevated));
+  --color-glass-val: rgb(var(--glass));
+  --color-glass-border-val: rgb(var(--glass-border));
+  --color-glass-highlight-val: rgb(var(--glass-highlight));
+
+  --color-primary-val: rgb(var(--text-primary));
+  --color-secondary-val: rgb(var(--text-secondary));
+  --color-muted-val: rgb(var(--text-muted));
+
+  --color-accent-val: rgb(var(--accent));
+  --color-accent-from-val: rgb(var(--accent-from));
+  --color-accent-to-val: rgb(var(--accent-to));
+
+  --color-success-val: rgb(var(--success));
+  --color-danger-val: rgb(var(--danger));
+}
+
+@theme {
+  --color-bg: var(--color-bg-val);
+  --color-bg-elevated: var(--color-bg-elevated-val);
+  --color-glass: var(--color-glass-val);
+  --color-glass-border: var(--color-glass-border-val);
+  --color-glass-highlight: var(--color-glass-highlight-val);
+
+  --color-primary: var(--color-primary-val);
+  --color-secondary: var(--color-secondary-val);
+  --color-muted: var(--color-muted-val);
+
+  --color-text-primary: var(--color-primary-val);
+  --color-text-secondary: var(--color-secondary-val);
+  --color-text-muted: var(--color-muted-val);
+
+  --color-accent: var(--color-accent-val);
+  --color-accent-from: var(--color-accent-from-val);
+  --color-accent-to: var(--color-accent-to-val);
+
+  --color-success: var(--color-success-val);
+  --color-danger: var(--color-danger-val);
+
+  --font-sans: -apple-system, "SF Pro Display", "Inter", system-ui, sans-serif;
+}

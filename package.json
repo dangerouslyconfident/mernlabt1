@@ -1,0 +1,18 @@
+{
+  "name": "shopkart-mern-lab",
+  "version": "1.0.0",
+  "description": "ShopKart Fullstack Engineering Labs 01-04 (Auth, Catalog, and Wishlist)",
+  "scripts": {
+    "start": "node backend/index.js",
+    "backend": "node --watch backend/index.js",
+    "frontend": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "test": "node backend/test_all_labs.js",
+    "test:wishlist": "node backend/test_wishlist.js",
+    "test:cart": "node backend/test_cart.js",
+    "test:orders": "node backend/test_orders.js"
+  },
+  "keywords": ["mern", "express", "mongodb", "mongoose", "react", "wishlist", "jwt"],
+  "author": "ShopKart Team",
+  "license": "ISC"
+}
